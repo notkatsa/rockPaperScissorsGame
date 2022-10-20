@@ -1,0 +1,71 @@
+:root {
+    --primary-light: #ddd;
+    --primary-dark: #222831;
+    --secondary-dark: #393e46;
+    --secondary-dark-hover: #4a4f57;
+    --secondary-dark-active: #5b5f68;
+    --header: #111720;
+    --primary-yellow: #fac650;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    /* footer support */
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+    font-family:'Roboto', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'sans-serif';
+    line-height: 1.6;
+    /* footer support */
+    margin-bottom: 100px;
+}
+
+button {
+    border: 3px;
+    color: black;
+    font-family: inherit;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+    padding: 5px;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px;
+    background-color: var(--header);
+}
+
+.title {
+    font-size: 32px;
+    color: var(--primary-yellow);
+    font-family: 'Press Start 2P', cursive;
+}
+
+.resultDiv, .scoreDiv, .buttons {
+    text-align: center;
+}
+.resultDiv {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.playAgainButton {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
